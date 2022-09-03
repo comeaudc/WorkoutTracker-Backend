@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const workoutSchema = new mongoose.Schema({
     muscleGroup: String,
     date: Date,
-    workout: [{
+    exercises: [{
         type: Object
     }]
 })

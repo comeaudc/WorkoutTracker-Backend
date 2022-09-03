@@ -4,6 +4,7 @@ const exerciseSchema = new mongoose.Schema({
     focus: String,
     name: String,
     sets: Number,
+    reprange: String,
     reps: [{
         type: Number
     }],
