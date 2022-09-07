@@ -53,10 +53,10 @@ router.delete('/history/:id', (req, res)=>{
     });
 });
 
-// update Route
-router.put('/:id', (req, res)=>{
-    Workout.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedTodo)=>{
-        res.json(updatedTodo);
+// Workout update Route
+router.put('/history/:id', (req, res)=>{
+    Workout.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedWorkout)=>{
+        res.json(updatedWorkout);
     });
 });
 

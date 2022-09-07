@@ -5,7 +5,8 @@ const workoutSchema = new mongoose.Schema({
     date: Date,
     exercises: [{
         type: Object
-    }]
+    }],
+    complete: Boolean
 })
 
 const Workout = mongoose.model('Workout', workoutSchema)
