@@ -34,6 +34,12 @@ router.get('/history', (req, res)=>{
         res.json(foundWorkout);
     });
 });
+// Workout Index Route
+router.get('/inprogress/', (req, res)=>{
+    Workout.find({}, (err, foundWorkout)=>{
+        res.json(foundWorkout);
+    });
+});
 // Workout Create Route
 router.post('/history', (req, res)=>{
     Workout.create(req.body, (err, createdWorkout)=>{
