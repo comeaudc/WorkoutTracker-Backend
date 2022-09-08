@@ -27,6 +27,12 @@ router.delete('/exercises/:id', (req, res)=>{
         res.json(deleteExercise);
     });
 });
+// Exercise update Route
+router.put('/exercises/:id', (req, res)=>{
+    Exercise.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedExerise)=>{
+        res.json(updatedExerise);
+    });
+});
 
 // Workout Index Route
 router.get('/history', (req, res)=>{

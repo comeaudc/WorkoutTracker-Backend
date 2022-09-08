@@ -1,5 +1,5 @@
 # Workout Tracker
-Backend API link to database that collects, updates and stores data for exercises and custom workouts
+Backend API linked to a database that collects, updates and stores data for exercises and custom workouts
 
 ### Overview
 - [Link to the Deployed App](https://wotrackerdc.herokuapp.com/)
